@@ -1,18 +1,11 @@
-import 'bootstrap/dist/css/bootstrap.min.css'; 
-import Header from './components/Header'
-import Project from './components/Project'
-import Footer from './components/Footer'
+import { Outlet } from 'react-router-dom';
+import NavBar from './components/NavBar';
 
-
-function App() {
-
+export default function App() {
   return (
     <>
-    <Header />
-    <Project />
-    <Footer />
+      <NavBar />
+      <Outlet />
     </>
-  )
+  );
 }
-
-export default App
